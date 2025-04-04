@@ -69,7 +69,7 @@ const Note = () => {
         
         <h1 className="branch-title">Select Branch</h1>
         <div className="branch-buttons">
-          {['CS', 'EC', 'EEE', 'CE', 'AT', 'CH', 'ME', 'PO'].map((branchOption) => (
+          {['CS' /*, 'EC', 'EEE', 'CE', 'AT', 'CH', 'ME', 'PO'*/ ].map((branchOption) => (
             <button
               key={branchOption}
               onClick={() => setBranch(branchOption)}

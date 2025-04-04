@@ -47,7 +47,7 @@ const QuestionPapers = () => {
   
         <h1 className="qp-unique-branch-title">Select Branch</h1>
         <div className="qp-unique-branch-buttons">
-          {['CS', 'EC', 'EEE', 'CE', 'AT', 'CH', 'ME', 'PO'].map((branchOption) => (
+          {['CS' /* , 'EC', 'EEE', 'CE', 'AT', 'CH', 'ME', 'PO'*/ ].map((branchOption) => (
             <button
               key={branchOption}
               onClick={() => setBranch(branchOption)}
@@ -77,7 +77,7 @@ const QuestionPapers = () => {
       <div className="qp-unique-selection-section">
         <h2 className="qp-unique-title">Select Year</h2>
         <div className="qp-unique-buttons">
-          {['2023', '2024'].map((yr) => (
+          {['2024'].map((yr) => (
             <button
               key={yr}
               onClick={() => setYear(yr)}
