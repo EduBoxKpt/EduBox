@@ -42,9 +42,7 @@ const QuestionPapers = () => {
     <div className="qp-unique-container">
 
 <h1 className="question-heading">QUESTION PAPER</h1>
-      <Link to="/loginqp" className="login-button">
-                  Login
-                </Link>
+      
       <div className="qp-unique-branch-container">
   
         <h1 className="qp-unique-branch-title">Select Branch</h1>

@@ -1,5 +1,10 @@
 /* ContactUs.css */
 
+body {
+  background-color: #333; /* Dark background for the entire page */
+  margin: 0;
+  padding: 0;
+}
 .contact-container {
   max-width: 900px;
   margin: 40px auto;

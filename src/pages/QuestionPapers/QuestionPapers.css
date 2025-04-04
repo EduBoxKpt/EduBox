@@ -1,7 +1,7 @@
 /* General styles for the container */
 .qp-unique-container {
-  border-top: 4px solid #ffcc00; 
-  border-bottom: 4px solid #ffcc00;
+
+  
   display: flex;
   flex-direction: column;
   align-items: center;

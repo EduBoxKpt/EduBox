@@ -66,9 +66,7 @@ const Note = () => {
       <h1 className="notes-heading">NOTES</h1>
       
       <div className="branch-container">
-        <Link to="/loginnotes" className="login-button">
-          Login
-        </Link>
+        
         <h1 className="branch-title">Select Branch</h1>
         <div className="branch-buttons">
           {['CS', 'EC', 'EEE', 'CE', 'AT', 'CH', 'ME', 'PO'].map((branchOption) => (

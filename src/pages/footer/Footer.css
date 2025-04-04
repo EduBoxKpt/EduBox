@@ -3,6 +3,8 @@
   color: #fff;
   padding: 30px 20px;
   transition: all 0.3s ease-in-out;
+  border-top: 3px solid #ffcc00;
+
 }
 
 .custom-footer-content {

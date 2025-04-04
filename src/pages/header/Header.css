@@ -8,6 +8,7 @@
   height: 15%;
   position: relative; /* Ensure this is relative */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid #ffcc00;
 }
 
 /* Logo section */
