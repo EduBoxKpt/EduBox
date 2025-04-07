@@ -136,11 +136,7 @@ const QuestionPapers = () => {
                         View
                       </a>
                     </td>
-                    <td className="qp-table__data">
-                      <a href={qp.see} target="_blank" rel="noopener noreferrer">
-                        View
-                      </a>
-                    </td>
+                    
                   </tr>
                 ))
               ) : (
