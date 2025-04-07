@@ -112,7 +112,7 @@ const QuestionPapers = () => {
                 <th className="qp-table__heading">CIE 1</th>
                 <th className="qp-table__heading">CIE 2</th>
                 <th className="qp-table__heading">CIE 3</th>
-                <th className="qp-table__heading">SEE</th>
+                
               </tr>
             </thead>
             <tbody>
