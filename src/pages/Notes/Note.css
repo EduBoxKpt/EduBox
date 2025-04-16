@@ -175,3 +175,51 @@
   font-weight: bold;
 }
   
+
+
+/* Responsive styles for Available Subjects */
+@media (max-width: 768px) {
+  .subjects-container {
+    padding: 15px;
+  }
+
+  .subjects-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .subject-item {
+    padding: 8px;
+  }
+
+  .subject-more-btn {
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .module-dropdown {
+    padding: 10px;
+    overflow-x: auto;
+  }
+
+  .module-table {
+    width: 100%;
+    font-size: 0.9rem;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .module-table th,
+  .module-table td {
+    padding: 6px;
+    font-size: 0.9rem;
+  }
+
+  .module-table th {
+    font-size: 1rem;
+  }
+}

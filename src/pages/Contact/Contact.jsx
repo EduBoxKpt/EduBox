@@ -1,6 +1,9 @@
 // ContactUs.js
+import axios from 'axios';
 import React, { useState } from 'react';
 import './Contact.css';
+
+const baseUrl = process.env.REACT_APP_BASE_URL;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,11 +20,16 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Simulate form submission
-    setFormStatus('Thank you for contacting us! We will get back to you shortly.');
-    setFormData({ name: '', email: '', message: '', subject: '' });
+    try {
+      const response = await axios.post(`${baseUrl}/api/contact`, formData);
+      setFormStatus(response.data); // Expecting plain text from backend
+      setFormData({ name: '', email: '', message: '', subject: '' });
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      setFormStatus('Something went wrong. Please try again.');
+    }
   };
 
   return (
@@ -88,7 +96,7 @@ const Contact = () => {
 
       <div className="contact-info">
         <h2>Contact Information</h2>
-        <p>Email: edubox@gmail.com</p>
+        <p>Email: eduboxkpt@gmail.com</p>
         <p>Phone: +91 8310846925</p>
         <p>Address: Mangaluru, Karnataka, India</p>
       </div>
